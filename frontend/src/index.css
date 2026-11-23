@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-charcoal font-sans antialiased selection:bg-crimson/20 selection:text-crimson-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-navy font-bold tracking-tight;
+  }
+}
+
+/* Custom Leaflet Map styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  z-index: 10;
+}
